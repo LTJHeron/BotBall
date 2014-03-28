@@ -1,0 +1,1 @@
+node BotBallLite OpposingBot "java -jar basicBotBall-0.0.0-SNAPSHOT.one-jar.jar" MyBot "java -jar winningBotBall-0.0.0-SNAPSHOT.one-jar.jar"

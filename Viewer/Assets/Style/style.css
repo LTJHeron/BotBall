@@ -1,0 +1,590 @@
+/**
+	Mixins for the project
+*/
+/*! normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+audio, canvas, video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Prevent system color scheme's background color being used in Firefox, IE,
+ *    and Opera.
+ * 2. Prevent system color scheme's text color being used in Firefox, IE, and
+ *    Opera.
+ * 3. Set default font family to sans-serif.
+ * 4. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  background: #fff;
+  /* 1 */
+  color: #000;
+  /* 2 */
+  font-family: sans-serif;
+  /* 3 */
+  -ms-text-size-adjust: 100%;
+  /* 4 */
+  -webkit-text-size-adjust: 100%;
+  /* 4 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active, a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+b, strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+button, input, select, textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+button, input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+button, select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled], html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/**
+	Colour palette
+*/
+/**
+	Fonts
+*/
+/**
+	Global styles
+*/
+html {
+  font-size: 62.5%;
+  /** rem sizing - hurray! */
+  min-height: 100%;
+  /* Chrome10+,Safari5.1+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(12, 20, 31, 0.9)), color-stop(40%, rgba(12, 20, 31, 0.9))), -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(111, 195, 223, 0.9)), color-stop(100%, rgba(12, 20, 31, 0.9))), transparent url(/Assets/Image/clouds.png) repeat;
+  /* FF3.6+ */
+  background: -moz-linear-gradient(top, rgba(12, 20, 31, 0.9) 0, rgba(12, 20, 31, 0.9) 40%), transparent url(/Assets/Image/clouds.png) repeat;
+  /* IE10+ */
+  background: -ms-linear-gradient(top, rgba(12, 20, 31, 0.9) 0, rgba(12, 20, 31, 0.9) 40%), transparent url(/Assets/Image/clouds.png) repeat;
+  /* W3C */
+  background: linear-gradient(to bottom, rgba(12, 20, 31, 0.8) 0, rgba(12, 20, 31, 0.8) 40%), radial-gradient(ellipse at center, rgba(111, 195, 223, 0.9) 0%, rgba(12, 20, 31, 0.7) 100%), transparent url(/Assets/Image/clouds.png) repeat; }
+
+body {
+  padding: 10px;
+  font-family: 'Orbitron', Tahoma, Geneva, Verdana, sans-serif;
+  color: #e6ffff;
+  font-size: 1.7rem; }
+
+.primaryHeading, h2 {
+  text-align: center; }
+
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  /* text-align: center; */ }
+
+hr {
+  margin: 20px 0 30px 0;
+  border: 1px solid #6fc3df;
+  -webkit-box-shadow: 0 0 20px 0 #e6ffff;
+  box-shadow: 0 0 20px 0 #e6ffff; }
+
+a {
+  color: #ffe64d;
+  -webkit-transition: text-shadow 0.2s ease-in-out;
+  -moz-transition: text-shadow 0.2s ease-in-out;
+  -o-transition: text-shadow 0.2s ease-in-out;
+  -ms-transition: text-shadow 0.2s ease-in-out;
+  transition: text-shadow 0.2s ease-in-out; }
+
+a:hover, a:focus {
+  color: #e6ffff;
+  text-shadow: 0 0 5px #e6ffff; }
+
+table {
+  margin: 30px auto 0; }
+
+td, th {
+  padding: 15px 10px; }
+
+td {
+  box-shadow: 0 0 7px #e6ffff;
+  border-left: 2px solid #6fc3df;
+  border-right: 2px solid #6fc3df;
+  border-bottom: 2px solid #6fc3df; }
+
+th {
+  border-left: 2px solid #e6ffff;
+  border-right: 2px solid #e6ffff;
+  border-bottom: 5px solid #e6ffff; }
+
+td, p, ol {
+  font-family: Tahoma, Geneva, Verdana, sans-serif; }
+
+li {
+  margin: 0 0 5px 0; }
+
+h1 {
+  letter-spacing: 5px;
+  font-size: 5rem;
+  margin: 20px 0 10px 0; }
+
+/**
+	Navigation
+*/
+.primaryNavigation {
+  margin: 0;
+  text-align: center; }
+
+.primaryNavigation a {
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+  margin: 0 10px 0 0;
+  font-size: 2.0rem; }
+
+/**
+	Canvas visualiser
+*/
+.pitchContainer {
+  position: relative;
+  display: inline-block;
+  vertical-align: top; }
+
+canvas {
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.pitch {
+  -webkit-box-shadow: 1px 1px 5px 5px rgba(255, 230, 77, 0.6);
+  -moz-box-shadow: 1px 1px 5px 5px rgba(255, 230, 77, 0.6);
+  box-shadow: 1px 1px 5px 5px rgba(255, 230, 77, 0.6); }
+
+.gameControls {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px 0 0; }
+
+.gameControls a {
+  display: block;
+  padding: 20px 10px;
+  border: 2px solid #6fc3df;
+  text-align: center;
+  margin: 0 0 20px 0;
+  position: relative;
+  border-bottom-left-radius: 10px; }
+
+.gameControls a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 16px 16px 0;
+  /* This trick side-steps a webkit bug */
+  border-style: solid;
+  /* to do - use sass's colour lighten thing **/
+  border-color: #6fc3df #6fc3df #1a2a41 #1a2a41;
+  /* A bit more verbose to work with .rounded too */ }
+
+.gameControls a:hover {
+  border-color: #e6ffff; }
+
+.gameControls a:hover:before {
+  border-color: #e6ffff #e6ffff #1a2a41 #1a2a41; }
+
+.disabled, .disabled:hover {
+  opacity: 0.5;
+  cursor: default; }
+
+/**
+	Unity Player
+*/
+.unityPlayer {
+  cursor: default;
+  height: 600px;
+  width: 960px; }
+
+.content {
+  margin: auto;
+  width: 960px; }
+
+.footer {
+  font-size: x-small; }
+
+.missing {
+  margin: auto;
+  position: relative;
+  top: 50%;
+  width: 193px; }
+
+.missing a {
+  height: 63px;
+  position: relative;
+  top: -31px; }
+
+.missing img {
+  border-width: 0; }
+
+.gameInformation {
+  width: 750px;
+  margin: 0 auto 10px auto;
+  overflow: hidden; }
+
+.gameInformation span {
+  font-size: 40px;
+  font-family: 'Orbitron', Tahoma, Geneva, Verdana, sans-serif; }
+
+.teamOne {
+  color: #6fc3df;
+  float: left;
+  margin: 0 30px 0 0; }
+
+.teamTwo {
+  float: right;
+  color: #df740c;
+  margin: 0 0 0 30px; }
+
+.gameInstructions {
+  margin: 20px 0 30px 0;
+  padding: 0;
+  text-align: center;
+  width: 100%; }
+
+.gameInstructions li {
+  min-width: 150px;
+  display: inline-block;
+  margin: 0 30px 0 0; }
+
+.gameInstructions span {
+  display: inline-block;
+  width: 44px;
+  height: 41px;
+  border-radius: 4px;
+  margin: 0 15px 0 0;
+  line-height: 41px;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0 2px #e6ffff ;
+  -moz-box-shadow: 0 0 0 2px #e6ffff ;
+  box-shadow: 0 0 0 2px #e6ffff ;
+  text-shadow: 0px 1px 0px #6fc3df; }
+
+/**
+	Registration page
+*/
+.registrationForm fieldset {
+  border: none; }
+
+.registrationForm ul {
+  list-style: none; }
+
+.registrationForm li {
+  padding: 10px 0; }
+
+.registrationForm label {
+  min-width: 230px;
+  display: inline-block; }
+
+.registrationForm .formInput {
+  padding: 10px;
+  min-width: 400px;
+  font-family: Tahoma, Geneva, Verdana, sans-serif; }
+
+.registrationForm input[type=submit] {
+  padding: 20px 10px;
+  border: 2px solid #6fc3df;
+  position: relative;
+  border-bottom-left-radius: 10px;
+  background: none;
+  color: #ffe64d;
+  -webkit-transition: box-shadow 0.1s ease-in-out;
+  -moz-transition: box-shadow 0.1s ease-in-out;
+  -o-transition: box-shadow 0.1s ease-in-out;
+  -ms-transition: box-shadow 0.1s ease-in-out;
+  transition: box-shadow 0.1s ease-in-out;
+  float: right;
+  margin: 0 295px 0 0; }
+
+.registrationForm input[type=submit]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: #6fc3df #6fc3df #1a2a41 #1a2a41;
+  /* A bit more verbose to work with .rounded too */ }
+
+.registrationForm input[type=submit]:hover, .registrationForm input[type=submit]:focus {
+  color: #e6ffff;
+  border-color: #e6ffff;
+  -webkit-box-shadow: 0 0 20px 0 #6fc3df;
+  box-shadow: 0 0 20px 0 #6fc3df; }
+
+.registrationForm input[type=submit]:hover:before {
+  border-color: #e6ffff #e6ffff #1a2a41 #1a2a41; }
